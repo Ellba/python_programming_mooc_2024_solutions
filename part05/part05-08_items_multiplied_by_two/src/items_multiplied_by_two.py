@@ -1,0 +1,22 @@
+# Write your solution here
+
+def double_items(numbers: list):
+    double = numbers[:]
+    for i in range(len(double)):
+        double[i] *= 2
+    
+    return double
+
+
+    # new_list = []
+    # for num in numbers:
+    #     new_list.append(num*2)
+    
+    # return new_list
+
+
+if __name__ == "__main__":
+    numbers = [2, 4, 5, 3, 11, -4]
+    numbers_doubled = double_items(numbers)
+    print("original:", numbers)
+    print("doubled:", numbers_doubled)
